@@ -9,6 +9,7 @@ body {
     background-color: #0a0a0a;
     color: #ffffff;
     scroll-behavior: smooth;
+    transition: background 0.3s, color 0.3s;
 }
 
 header {
@@ -50,6 +51,28 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffffff;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.theme-toggle {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+    border-color: #00e5ff;
+    color: #00e5ff;
 }
 
 .hire-btn {
@@ -102,13 +125,8 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.cyan {
-    color: #00e5ff;
-}
-
-.purple {
-    color: #a855f7;
-}
+.cyan { color: #00e5ff; }
+.purple { color: #a855f7; }
 
 .about-desc {
     font-size: 16px;
@@ -122,7 +140,7 @@ nav ul li a:hover {
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .btn {
@@ -137,9 +155,7 @@ nav ul li a:hover {
     transition: background 0.3s;
 }
 
-.btn:hover {
-    background-color: #00b8d4;
-}
+.btn:hover { background-color: #00b8d4; }
 
 .btn-outline {
     display: inline-block;
@@ -150,7 +166,7 @@ nav ul li a:hover {
     border-radius: 6px;
     font-weight: 600;
     font-size: 14px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s, color 0.3s;
 }
 
 .btn-outline:hover {
@@ -160,12 +176,12 @@ nav ul li a:hover {
 
 .stats-bar {
     display: flex;
-    gap: 0;
     border: 1px solid #1e1e1e;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;
     max-width: 900px;
+    margin-bottom: 0;
 }
 
 .stat {
@@ -178,9 +194,7 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.stat:last-child {
-    border-right: none;
-}
+.stat:last-child { border-right: none; }
 
 .stat-label {
     font-size: 10px;
@@ -191,6 +205,34 @@ nav ul li a:hover {
 .stat-value {
     font-size: 12px;
     font-weight: 600;
+}
+
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: #111;
+    border-top: 1px solid #1e1e1e;
+    border-bottom: 1px solid #1e1e1e;
+    padding: 12px 0;
+    margin-top: 30px;
+}
+
+.ticker {
+    display: flex;
+    gap: 40px;
+    animation: ticker 25s linear infinite;
+    white-space: nowrap;
+}
+
+.ticker span {
+    font-size: 13px;
+    color: #aaaaaa;
+    letter-spacing: 1px;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 #skills {
@@ -218,7 +260,7 @@ nav ul li a:hover {
     border-radius: 8px;
     font-size: 14px;
     color: #aaaaaa;
-    transition: border-color 0.3s, color 0.3s;
+    transition: border-color 0.3s, color 0.3s, opacity 0.4s, transform 0.4s;
     opacity: 0;
     transform: translateY(20px);
 }
@@ -249,7 +291,7 @@ nav ul li a:hover {
     border: 1px solid #1e1e1e;
     border-radius: 10px;
     padding: 25px;
-    transition: border-color 0.3s, transform 0.3s;
+    transition: border-color 0.3s, transform 0.3s, opacity 0.4s;
     opacity: 0;
     transform: translateY(20px);
 }
@@ -299,9 +341,7 @@ nav ul li a:hover {
     font-weight: 600;
 }
 
-.project-link:hover {
-    text-decoration: underline;
-}
+.project-link:hover { text-decoration: underline; }
 
 #contact {
     min-height: 60vh;
@@ -344,9 +384,7 @@ footer {
     border-top: 1px solid #1e1e1e;
 }
 
-.section-container {
-    width: 100%;
-}
+.section-container { width: 100%; }
 
 /* Fade in */
 .fade-in {
@@ -358,4 +396,69 @@ footer {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Light mode */
+body.light {
+    background-color: #f5f5f5;
+    color: #0a0a0a;
+}
+
+body.light header {
+    background-color: rgba(245, 245, 245, 0.95);
+    border-bottom-color: #e0e0e0;
+}
+
+body.light nav ul li a { color: #444; }
+
+body.light .theme-toggle {
+    background-color: #e0e0e0;
+    color: #0a0a0a;
+    border-color: #ccc;
+}
+
+body.light .badge {
+    background-color: #eeeeee;
+    border-color: #ddd;
+    color: #555;
+}
+
+body.light .location { color: #999; }
+body.light .about-desc { color: #555; }
+body.light .btn-outline { color: #0a0a0a; border-color: #ccc; }
+body.light .btn-outline:hover { border-color: #00b8d4; color: #00b8d4; }
+
+body.light .stats-bar { border-color: #e0e0e0; }
+body.light .stat { border-right-color: #e0e0e0; }
+body.light .stat-label { color: #999; }
+
+body.light .ticker-wrap {
+    background-color: #eeeeee;
+    border-color: #e0e0e0;
+}
+
+body.light .ticker span { color: #666; }
+
+body.light .skill-card {
+    background-color: #ffffff;
+    border-color: #e0e0e0;
+    color: #444;
+}
+
+body.light .project-card {
+    background-color: #ffffff;
+    border-color: #e0e0e0;
+}
+
+body.light .project-card h3 { color: #0a0a0a; }
+body.light .project-card p { color: #555; }
+
+body.light .contact-card {
+    border-color: #ddd;
+    color: #555;
+}
+
+body.light footer {
+    border-top-color: #e0e0e0;
+    color: #999;
 }
