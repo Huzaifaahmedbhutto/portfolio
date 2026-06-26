@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #1e1e1e;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 28px;
+    color: #00e5ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00e5ff;
+}
+/* About */
+#about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 60px;
+}
+
+.greeting {
+    color: #00e5ff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-text h2 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    font-size: 16px;
+    color: #cccccc;
+    max-width: 550px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00e5ff;
+    color: #0a0a0a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #00b8d4;
+}
+/* Skills */
+#skills {
+    min-height: 100vh;
+    padding: 100px 60px;
+}
+
+.section-title {
+    font-size: 36px;
+    color: #00e5ff;
+    margin-bottom: 50px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #111111;
+    border: 1px solid #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.skill-card:hover {
+    border-color: #00e5ff;
+    color: #00e5ff;
+}
+/* Contact */
+#contact {
+    min-height: 60vh;
+    padding: 100px 60px;
+}
+
+.contact-desc {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-card {
+    padding: 15px 30px;
+    border: 1px solid #00e5ff;
+    color: #00e5ff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-card:hover {
+    background-color: #00e5ff;
+    color: #0a0a0a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #444444;
+    font-size: 13px;
+    border-top: 1px solid #1e1e1e;
+}
