@@ -15,13 +15,11 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #0a0a0a;
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgba(10, 10, 10, 0.95);
+    padding: 18px 60px;
     z-index: 100;
     border-bottom: 1px solid #1e1e1e;
+    backdrop-filter: blur(10px);
 }
 
 nav {
@@ -32,8 +30,9 @@ nav {
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 24px;
     color: #00e5ff;
+    font-weight: 800;
 }
 
 nav ul {
@@ -43,62 +42,155 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #aaaaaa;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #00e5ff;
+    color: #ffffff;
+}
+
+.hire-btn {
+    background-color: #00e5ff;
+    color: #0a0a0a;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.hire-btn:hover {
+    background-color: #00b8d4;
 }
 
 #about {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 100px 60px;
+    padding: 120px 60px 60px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.greeting {
-    color: #00e5ff;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.about-text h2 {
-    font-size: 52px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.about-text h3 {
-    font-size: 24px;
+.badge {
+    display: inline-block;
+    background-color: #111;
+    border: 1px solid #2a2a2a;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 13px;
     color: #aaaaaa;
     margin-bottom: 20px;
 }
 
+.location {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.hero-title {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.cyan {
+    color: #00e5ff;
+}
+
+.purple {
+    color: #a855f7;
+}
+
 .about-desc {
     font-size: 16px;
-    color: #cccccc;
+    color: #aaaaaa;
     max-width: 550px;
     line-height: 1.8;
-    margin-bottom: 30px;
+    margin: 0 auto 35px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 13px 28px;
     background-color: #00e5ff;
     color: #0a0a0a;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
     transition: background 0.3s;
 }
 
 .btn:hover {
     background-color: #00b8d4;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 13px 28px;
+    border: 1px solid #333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.btn-outline:hover {
+    border-color: #00e5ff;
+    color: #00e5ff;
+}
+
+.stats-bar {
+    display: flex;
+    gap: 0;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+}
+
+.stat {
+    flex: 1;
+    padding: 18px 15px;
+    border-right: 1px solid #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #555;
+}
+
+.stat-value {
+    font-size: 12px;
+    font-weight: 600;
 }
 
 #skills {
@@ -108,14 +200,14 @@ nav ul li a:hover {
 
 .section-title {
     font-size: 36px;
-    color: #00e5ff;
+    font-weight: 800;
     margin-bottom: 50px;
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 15px;
 }
 
 .skill-card {
@@ -124,8 +216,16 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 14px;
+    color: #aaaaaa;
     transition: border-color 0.3s, color 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.skill-card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .skill-card:hover {
@@ -150,6 +250,13 @@ nav ul li a:hover {
     border-radius: 10px;
     padding: 25px;
     transition: border-color 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .project-card:hover {
@@ -199,6 +306,7 @@ nav ul li a:hover {
 #contact {
     min-height: 60vh;
     padding: 100px 60px;
+    text-align: center;
 }
 
 .contact-desc {
@@ -210,27 +318,28 @@ nav ul li a:hover {
 .contact-links {
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 
 .contact-card {
     padding: 15px 30px;
-    border: 1px solid #00e5ff;
-    color: #00e5ff;
+    border: 1px solid #1e1e1e;
+    color: #aaaaaa;
     text-decoration: none;
     border-radius: 8px;
     font-size: 15px;
-    transition: background 0.3s, color 0.3s;
+    transition: border-color 0.3s, color 0.3s;
 }
 
 .contact-card:hover {
-    background-color: #00e5ff;
-    color: #0a0a0a;
+    border-color: #00e5ff;
+    color: #00e5ff;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    color: #444444;
+    color: #333;
     font-size: 13px;
     border-top: 1px solid #1e1e1e;
 }
@@ -238,7 +347,8 @@ footer {
 .section-container {
     width: 100%;
 }
-/* Animations */
+
+/* Fade in */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
