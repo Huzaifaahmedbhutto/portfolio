@@ -26,7 +26,8 @@ if (typingEl) {
     let i = 0;
     setTimeout(() => {
         const typing = setInterval(() => {
-            typingEl.innerHTML = text.slice(0, i)
+            const current = text.slice(0, i);
+            typingEl.innerHTML = current
                 .replace('AI', '<span class="cyan">AI</span>')
                 .replace('Future.', '<span class="purple">Future.</span>');
             i++;
@@ -38,9 +39,7 @@ if (typingEl) {
 // Fade in sections
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
+        if (entry.isIntersecting) entry.target.classList.add('visible');
     });
 }, { threshold: 0.1 });
 
@@ -76,3 +75,14 @@ const projectObserver = new IntersectionObserver((entries) => {
 
 const projectsSection = document.querySelector('#projects');
 if (projectsSection) projectObserver.observe(projectsSection);
+
+// Dark/Light theme toggle
+function toggleTheme() {
+    document.body.classList.toggle('light');
+    const btn = document.querySelector('.theme-toggle');
+    if (document.body.classList.contains('light')) {
+        btn.textContent = '☀️ Light';
+    } else {
+        btn.textContent = '🌙 Dark';
+    }
+}
