@@ -12,13 +12,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
-        header.style.boxShadow = '0 2px 20px rgba(0, 229, 255, 0.1)';
+        header.style.boxShadow = '0 2px 20px rgba(0, 229, 255, 0.05)';
     } else {
         header.style.boxShadow = 'none';
     }
 });
 
-// Fade in animation on scroll
+// Typing effect
+const text = "I Build Apps with AI & the Future.";
+const typingEl = document.querySelector('.hero-title');
+if (typingEl) {
+    typingEl.innerHTML = '';
+    let i = 0;
+    setTimeout(() => {
+        const typing = setInterval(() => {
+            typingEl.innerHTML = text.slice(0, i)
+                .replace('AI', '<span class="cyan">AI</span>')
+                .replace('Future.', '<span class="purple">Future.</span>');
+            i++;
+            if (i > text.length) clearInterval(typing);
+        }, 50);
+    }, 300);
+}
+
+// Fade in sections
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -32,32 +49,12 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Typing effect
-const text = "Huzaifa Ahmed Bhutto";
-const typingEl = document.querySelector('.about-text h2');
-typingEl.textContent = '';
-let i = 0;
-setTimeout(() => {
-    const typing = setInterval(() => {
-        typingEl.textContent += text[i];
-        i++;
-        if (i >= text.length) clearInterval(typing);
-    }, 80);
-}, 500);
-
-// Skill cards stagger animation
-document.querySelectorAll('.skill-card').forEach((card, index) => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = `opacity 0.4s ease ${index * 0.05}s, transform 0.4s ease ${index * 0.05}s`;
-});
-
+// Skill cards stagger
 const skillObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            document.querySelectorAll('.skill-card').forEach(card => {
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
+            document.querySelectorAll('.skill-card').forEach((card, i) => {
+                setTimeout(() => card.classList.add('visible'), i * 60);
             });
         }
     });
@@ -65,3 +62,17 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 const skillsSection = document.querySelector('#skills');
 if (skillsSection) skillObserver.observe(skillsSection);
+
+// Project cards stagger
+const projectObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelectorAll('.project-card').forEach((card, i) => {
+                setTimeout(() => card.classList.add('visible'), i * 100);
+            });
+        }
+    });
+}, { threshold: 0.1 });
+
+const projectsSection = document.querySelector('#projects');
+if (projectsSection) projectObserver.observe(projectsSection);
