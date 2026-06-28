@@ -1,3 +1,26 @@
+// Custom Cursor
+const cursor = document.getElementById('cursor');
+const follower = document.getElementById('cursorFollower');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    setTimeout(() => {
+        follower.style.left = e.clientX + 'px';
+        follower.style.top = e.clientY + 'px';
+    }, 80);
+});
+
+document.querySelectorAll('a, button, .skill-card, .project-card').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+        cursor.classList.add('active');
+        follower.classList.add('active');
+    });
+    el.addEventListener('mouseleave', () => {
+        cursor.classList.remove('active');
+        follower.classList.remove('active');
+    });
+});
 // Loading screen
 window.addEventListener('load', () => {
     setTimeout(() => {
