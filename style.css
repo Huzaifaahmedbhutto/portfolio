@@ -756,3 +756,41 @@ body.light footer { border-top-color: #f0c0cc; }
 body.light .ticker-wrap { background: #fff0f3; border-color: #f0c0cc; }
 body.light .loader { background: #fff5f7; }
 body.light .loader-name { color: #1a0a0f; }
+/* Custom Cursor */
+* { cursor: none; }
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    background: #cc3355;
+    border-radius: 50%;
+    position: fixed;
+    top: 0; left: 0;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s, background 0.3s;
+}
+
+.cursor-follower {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(204, 51, 85, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    top: 0; left: 0;
+    pointer-events: none;
+    z-index: 99998;
+    transform: translate(-50%, -50%);
+    transition: all 0.15s ease;
+}
+
+.cursor.active {
+    transform: translate(-50%, -50%) scale(2);
+    background: #ff6b8a;
+}
+
+.cursor-follower.active {
+    transform: translate(-50%, -50%) scale(1.5);
+    border-color: #cc3355;
+}
