@@ -2,15 +2,15 @@
 window.addEventListener('load', () => {
     setTimeout(() => {
         document.getElementById('loader').classList.add('hidden');
-    }, 2000);
+    }, 2500);
 });
+
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
     });
 });
 
@@ -18,7 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
-        header.style.boxShadow = '0 2px 20px rgba(0, 229, 255, 0.05)';
+        header.style.boxShadow = '0 2px 20px rgba(204, 51, 85, 0.1)';
     } else {
         header.style.boxShadow = 'none';
     }
@@ -34,12 +34,12 @@ if (typingEl) {
         const typing = setInterval(() => {
             const current = text.slice(0, i);
             typingEl.innerHTML = current
-                .replace('AI', '<span class="cyan">AI</span>')
-                .replace('Future.', '<span class="purple">Future.</span>');
+                .replace('AI', '<span class="accent">AI</span>')
+                .replace('Future.', '<span class="accent2">Future.</span>');
             i++;
             if (i > text.length) clearInterval(typing);
         }, 50);
-    }, 300);
+    }, 2800);
 }
 
 // Fade in sections
@@ -87,8 +87,21 @@ function toggleTheme() {
     document.body.classList.toggle('light');
     const btn = document.querySelector('.theme-toggle');
     if (document.body.classList.contains('light')) {
-        btn.textContent = '☀️ Light';
-    } else {
         btn.textContent = '🌙 Dark';
+    } else {
+        btn.textContent = '☀️ Light';
+    }
+}
+
+// Contact form
+function sendMessage() {
+    const inputs = document.querySelectorAll('.form-input');
+    const textarea = document.querySelector('.form-textarea');
+    if (inputs[0].value && inputs[1].value && textarea.value) {
+        alert('Message sent! I will get back to you soon. 🚀');
+        inputs.forEach(i => i.value = '');
+        textarea.value = '';
+    } else {
+        alert('Please fill all fields!');
     }
 }
