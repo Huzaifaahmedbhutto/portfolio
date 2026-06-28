@@ -259,13 +259,14 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <div class="contact-form">
-                        <input type="text" placeholder="Your Name" class="form-input">
-                        <input type="email" placeholder="Your Email" class="form-input">
-                        <textarea placeholder="Your Message" class="form-textarea"></textarea>
-                        <button class="btn" onclick="sendMessage()">Send Message</button>
-                    </div>
-                </div>
+                      <div class="contact-form">
+    <form action="https://formspree.io/f/mojowonr" method="POST">
+        <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+        <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+        <textarea name="message" placeholder="Your Message" class="form-textarea" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</div>              </div>
             </div>
         </div>
     </section>
