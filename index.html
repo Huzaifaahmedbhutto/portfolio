@@ -10,67 +10,96 @@
 
     <!-- Loading Screen -->
     <div class="loader" id="loader">
-        <div class="loader-text">HUZAIFA AHMED BHUTTO</div>
-        <div class="loader-line"></div>
+        <div class="loader-inner">
+            <div class="loader-tags">
+                <span>★ SYSTEM READY</span>
+                <span>PORTFOLIO 2026</span>
+                <span>UI LOADING</span>
+            </div>
+            <h1 class="loader-name">HUZAIFA AHMED BHUTTO</h1>
+            <div class="loader-core">
+                <div class="core-left">
+                    <p class="core-label">CORE UI</p>
+                    <div class="core-circle">
+                        <div class="orbit"></div>
+                        <div class="orbit orbit2"></div>
+                        <span class="core-welcome">WELCOME</span>
+                    </div>
+                    <p class="core-status">ONLINE</p>
+                </div>
+                <div class="core-right">
+                    <div class="core-stat"><span>06</span><small>Loaded</small></div>
+                    <div class="core-stat"><span>12ms</span><small>Stable</small></div>
+                </div>
+            </div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
     </div>
 
+    <!-- Navbar -->
     <header>
         <nav>
             <h1 class="logo">HAB.</h1>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-right">
-                <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark</button>
+                <button class="theme-toggle" onclick="toggleTheme()">☀️ Light</button>
                 <a href="mailto:ahmedhuzaifa201@gmail.com" class="hire-btn">Hire Me</a>
             </div>
         </nav>
     </header>
 
-    <section id="about">
-        <div class="about-container">
-            <div class="badge">🟢 Available for hire · Open to Internships</div>
-            <p class="location">TANDO JAM · SINDH, PAKISTAN</p>
-            <h2 class="hero-title">I Build Apps with <span class="cyan">AI</span> & the <span class="purple">Future.</span></h2>
-            <p class="about-desc">Mobile App & Full Stack Developer building real products using Android, React, Python and AI. Currently interning at Codiora House (Pvt) Ltd.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn">See My Work →</a>
-                <a href="mailto:ahmedhuzaifa201@gmail.com" class="btn-outline">Hire Me</a>
-                <a href="Huzaifa_Ahmed_Bhutto_CV (4) (1).docx" download class="btn-outline">Download CV ↓</a>
-            </div>
-            <div class="stats-bar">
-                <div class="stat"><span class="stat-label">INTERNSHIP</span><span class="stat-value cyan">Codiora</span></div>
-                <div class="stat"><span class="stat-label">STACK</span><span class="stat-value cyan">Android · React · AI</span></div>
-                <div class="stat"><span class="stat-label">UNIVERSITY</span><span class="stat-value cyan">SAU Tandojam</span></div>
-                <div class="stat"><span class="stat-label">GPA</span><span class="stat-value cyan">3.63</span></div>
-                <div class="stat"><span class="stat-label">OPEN TO</span><span class="stat-value cyan">Remote Work</span></div>
-                <div class="stat"><span class="stat-label">BASED IN</span><span class="stat-value cyan">Pakistan</span></div>
-            </div>
-            <div class="ticker-wrap">
-                <div class="ticker">
-                    <span>Mobile App Developer</span><span>•</span>
-                    <span>Full Stack Developer</span><span>•</span>
-                    <span>AI Builder</span><span>•</span>
-                    <span>CS Student @ SAU</span><span>•</span>
-                    <span>Intern @ Codiora House</span><span>•</span>
-                    <span>Open to Opportunities</span><span>•</span>
-                    <span>Pakistan 🇵🇰</span><span>•</span>
-                    <span>Mobile App Developer</span><span>•</span>
-                    <span>Full Stack Developer</span><span>•</span>
-                    <span>AI Builder</span><span>•</span>
-                    <span>CS Student @ SAU</span><span>•</span>
-                    <span>Intern @ Codiora House</span><span>•</span>
-                    <span>Open to Opportunities</span><span>•</span>
-                    <span>Pakistan 🇵🇰</span><span>•</span>
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="badge">● Available for hire · Open to Internships</div>
+                <h2 class="hero-title">I Build Apps with <span class="accent">AI</span> &<br>the <span class="accent2">Future.</span></h2>
+                <p class="hero-sub">Mobile App & Full Stack Developer building real products using Android, React, Python and AI. Currently interning at Codiora House (Pvt) Ltd.</p>
+                <p class="hero-location">📍 Tando Jam, Sindh, Pakistan &nbsp;|&nbsp; 🎓 SAU Tandojam</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">See My Work →</a>
+                    <a href="Huzaifa_Ahmed_Bhutto_CV (4) (1).docx" download class="btn-outline">Download CV ↓</a>
                 </div>
+                <div class="social-links">
+                    <a href="https://github.com/Huzaifaahmedbhutto" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/huzaifa-ahmed-bhutto-880441317" target="_blank">LinkedIn</a>
+                    <a href="mailto:ahmedhuzaifa201@gmail.com">Email</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-img-wrap">
+                    <img src="huzaifa.jpg.jpeg" alt="Huzaifa Ahmed Bhutto" class="hero-img">
+                    <div class="img-badge">● Huzaifa Ahmed Bhutto</div>
+                </div>
+            </div>
+        </div>
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <span>Mobile App Developer</span><span>•</span>
+                <span>Full Stack Developer</span><span>•</span>
+                <span>AI Builder</span><span>•</span>
+                <span>CS Student @ SAU</span><span>•</span>
+                <span>Intern @ Codiora House</span><span>•</span>
+                <span>Open to Opportunities</span><span>•</span>
+                <span>Pakistan 🇵🇰</span><span>•</span>
+                <span>Mobile App Developer</span><span>•</span>
+                <span>Full Stack Developer</span><span>•</span>
+                <span>AI Builder</span><span>•</span>
+                <span>CS Student @ SAU</span><span>•</span>
+                <span>Intern @ Codiora House</span><span>•</span>
+                <span>Open to Opportunities</span><span>•</span>
+                <span>Pakistan 🇵🇰</span><span>•</span>
             </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About -->
     <section id="aboutme">
         <div class="section-container">
             <p class="section-num">01 ——— ABOUT ME</p>
@@ -93,13 +122,14 @@
                     </div>
                 </div>
                 <div class="aboutme-photo">
-                    <img src="huzaifa.jpg.jpeg" alt="Huzaifa Ahmed Bhutto" class="profile-img">
+                    <img src="huzaifa.jpg.jpeg" alt="Huzaifa" class="profile-img">
                     <div class="photo-badge">● Huzaifa Ahmed Bhutto</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills">
         <div class="section-container">
             <p class="section-num">02 ——— SKILLS</p>
@@ -121,72 +151,121 @@
         </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects">
         <div class="section-container">
             <p class="section-num">03 ——— PROJECTS</p>
-            <h2 class="section-title">PROJECTS.</h2>
+            <h2 class="section-title">FEATURED WORK.</h2>
+            <p class="projects-sub">A showcase of my recent projects demonstrating expertise in mobile development, AI integration, and full-stack engineering.</p>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>StudyMate AI</h3>
-                    <p>A fully deployed AI learning platform with 8 tools — Explain, Quiz, Flashcards, Study Plan and more.</p>
-                    <div class="project-tags">
-                        <span>Python</span><span>Streamlit</span><span>Claude API</span><span>AI</span>
+                    <div class="project-img-placeholder">StudyMate AI</div>
+                    <div class="project-info">
+                        <h3>StudyMate AI</h3>
+                        <p>A fully deployed AI learning platform with 8 tools — Explain, Quiz, Flashcards, Study Plan and more.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Streamlit</span><span>Claude API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Huzaifaahmedbhutto/studymate-ai" target="_blank" class="proj-btn">GitHub</a>
+                            <a href="https://studymate-ai-vd9mftx92ilhuh9b9vvswx.streamlit.app/" target="_blank" class="proj-btn-outline">Live Demo</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/Huzaifaahmedbhutto/studymate-ai" target="_blank" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
-                    <h3>Neon Hand Web</h3>
-                    <p>Real-time hand landmark visualizer using OpenCV and MediaPipe. Detects hand joints live via webcam.</p>
-                    <div class="project-tags">
-                        <span>Python</span><span>OpenCV</span><span>MediaPipe</span>
+                    <div class="project-img-placeholder">Neon Hand Web</div>
+                    <div class="project-info">
+                        <h3>Neon Hand Web</h3>
+                        <p>Real-time hand landmark visualizer using OpenCV and MediaPipe with glowing neon effects.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>OpenCV</span><span>MediaPipe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Huzaifaahmedbhutto/neon-hand-web" target="_blank" class="proj-btn">GitHub</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/Huzaifaahmedbhutto/neon-hand-web" target="_blank" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
-                    <h3>StoryForge AI</h3>
-                    <p>Offline bilingual (Urdu/English) story generator with genre selection and Canvas API cover generation.</p>
-                    <div class="project-tags">
-                        <span>JavaScript</span><span>HTML</span><span>Web Audio API</span>
+                    <div class="project-img-placeholder">StoryForge AI</div>
+                    <div class="project-info">
+                        <h3>StoryForge AI</h3>
+                        <p>Offline bilingual (Urdu/English) story generator with genre selection and Canvas API.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span><span>HTML</span><span>Web Audio API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Huzaifaahmedbhutto/-storyforge-ai" target="_blank" class="proj-btn">GitHub</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/Huzaifaahmedbhutto/-storyforge-ai" target="_blank" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
-                    <h3>Personal Finance Tracker</h3>
-                    <p>Tracks daily income and expenses. User sets a monthly budget and monitors spending in real time.</p>
-                    <div class="project-tags">
-                        <span>Python</span><span>HTML</span>
+                    <div class="project-img-placeholder">Finance Tracker</div>
+                    <div class="project-info">
+                        <h3>Personal Finance Tracker</h3>
+                        <p>Tracks daily income and expenses with monthly budget monitoring.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Huzaifaahmedbhutto/personal-finance-tracker" target="_blank" class="proj-btn">GitHub</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/Huzaifaahmedbhutto/personal-finance-tracker" target="_blank" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
-                    <h3>Student Grade Calculator</h3>
-                    <p>Calculates GPA across multiple subjects and displays grade letters automatically.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
+                    <div class="project-img-placeholder">Grade Calculator</div>
+                    <div class="project-info">
+                        <h3>Student Grade Calculator</h3>
+                        <p>Calculates GPA across multiple subjects and displays grade letters automatically.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Huzaifaahmedbhutto/students-grade-calculator" target="_blank" class="proj-btn">GitHub</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/Huzaifaahmedbhutto/students-grade-calculator" target="_blank" class="project-link">View Project →</a>
                 </div>
                 <div class="project-card">
-                    <h3>Android Fuel Estimator</h3>
-                    <p>Android app that calculates fuel cost based on distance and fuel price with multi-screen navigation.</p>
-                    <div class="project-tags">
-                        <span>Java</span><span>Android Studio</span><span>XML</span>
+                    <div class="project-img-placeholder">Fuel Estimator</div>
+                    <div class="project-info">
+                        <h3>Android Fuel Estimator</h3>
+                        <p>Android app calculating fuel cost based on distance and fuel price with multi-screen navigation.</p>
+                        <div class="project-tags">
+                            <span>Java</span><span>Android Studio</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Huzaifaahmedbhutto" target="_blank" class="proj-btn">GitHub</a>
+                        </div>
                     </div>
-                    <a href="https://github.com/Huzaifaahmedbhutto" target="_blank" class="project-link">View Project →</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
         <div class="section-container">
             <p class="section-num">04 ——— CONTACT</p>
-            <h2 class="section-title">CONTACT.</h2>
-            <p class="contact-desc">Feel free to reach out for collaborations or just a friendly hello!</p>
-            <div class="contact-links">
-                <a href="mailto:ahmedhuzaifa201@gmail.com" class="contact-card">📧 Email</a>
-                <a href="https://github.com/Huzaifaahmedbhutto" target="_blank" class="contact-card">🐙 GitHub</a>
-                <a href="https://www.linkedin.com/in/huzaifa-ahmed-bhutto-880441317" target="_blank" class="contact-card">💼 LinkedIn</a>
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <h2 class="section-title">GET IN TOUCH.</h2>
+                    <p class="contact-desc">Let's collaborate! I am always open to discussing exciting projects and new opportunities.</p>
+                    <div class="contact-info">
+                        <p>📧 ahmedhuzaifa201@gmail.com</p>
+                        <p>📍 Tando Jam, Sindh, Pakistan</p>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Huzaifaahmedbhutto" target="_blank">🐙 GitHub</a>
+                        <a href="https://www.linkedin.com/in/huzaifa-ahmed-bhutto-880441317" target="_blank">💼 LinkedIn</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-form">
+                        <input type="text" placeholder="Your Name" class="form-input">
+                        <input type="email" placeholder="Your Email" class="form-input">
+                        <textarea placeholder="Your Message" class="form-textarea"></textarea>
+                        <button class="btn" onclick="sendMessage()">Send Message</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
