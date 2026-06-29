@@ -794,3 +794,18 @@ body.light .loader-name { color: #1a0a0f; }
     transform: translate(-50%, -50%) scale(1.5);
     border-color: #cc3355;
 }
+/* Particles */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+header, section, footer {
+    position: relative;
+    z-index: 1;
+}
