@@ -128,3 +128,38 @@ function sendMessage() {
         alert('Please fill all fields!');
     }
 }
+// Particles
+particlesJS('particles-js', {
+    particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: '#cc3355' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.3, random: true },
+        size: { value: 2, random: true },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: '#cc3355',
+            opacity: 0.1,
+            width: 1
+        },
+        move: {
+            enable: true,
+            speed: 1.5,
+            direction: 'none',
+            random: true,
+            out_mode: 'out'
+        }
+    },
+    interactivity: {
+        detect_on: 'canvas',
+        events: {
+            onhover: { enable: true, mode: 'repulse' },
+            onclick: { enable: true, mode: 'push' }
+        },
+        modes: {
+            repulse: { distance: 100 },
+            push: { particles_nb: 4 }
+        }
+    }
+});
