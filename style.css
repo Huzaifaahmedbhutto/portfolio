@@ -815,3 +815,128 @@ header, section, footer {
     object-fit: cover;
     display: block;
 }
+/* Services */
+#services {
+    min-height: 60vh;
+    padding: 100px 60px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background: rgba(204, 51, 85, 0.05);
+    border: 1px solid #3d1020;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.service-card:hover {
+    border-color: #cc3355;
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.service-card p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.7;
+}
+
+/* Education Timeline */
+#education {
+    min-height: 60vh;
+    padding: 100px 60px;
+    background: radial-gradient(ellipse at bottom left, rgba(204, 51, 85, 0.08) 0%, transparent 60%);
+}
+
+.timeline {
+    position: relative;
+    margin-top: 40px;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, #cc3355, transparent);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: #cc3355;
+    border-radius: 50%;
+    border: 2px solid #1a0a0f;
+    box-shadow: 0 0 10px rgba(204, 51, 85, 0.5);
+}
+
+.timeline-year {
+    font-size: 12px;
+    color: #cc3355;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.timeline-content small {
+    font-size: 12px;
+    color: #555;
+}
+
+body.light .service-card {
+    background: #fff0f3;
+    border-color: #f0c0cc;
+}
+
+body.light .service-card h3 { color: #1a0a0f; }
+body.light .timeline-content h3 { color: #1a0a0f; }
