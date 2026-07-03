@@ -176,3 +176,10 @@ const timelineObserver = new IntersectionObserver((entries) => {
 
 const educationSection = document.querySelector('#education');
 if (educationSection) timelineObserver.observe(educationSection);
+// Scroll Progress Bar
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    document.getElementById('progressBar').style.width = progress + '%';
+});
