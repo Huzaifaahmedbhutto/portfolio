@@ -163,3 +163,16 @@ particlesJS('particles-js', {
         }
     }
 });
+// Timeline animation
+const timelineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            document.querySelectorAll('.timeline-item').forEach((item, i) => {
+                setTimeout(() => item.classList.add('visible'), i * 200);
+            });
+        }
+    });
+}, { threshold: 0.2 });
+
+const educationSection = document.querySelector('#education');
+if (educationSection) timelineObserver.observe(educationSection);
