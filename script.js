@@ -183,3 +183,52 @@ window.addEventListener('scroll', () => {
     const progress = (scrollTop / docHeight) * 100;
     document.getElementById('progressBar').style.width = progress + '%';
 });
+// 1. MAGNETIC BUTTONS
+document.querySelectorAll('.btn, .hire-btn, .proj-btn, .proj-btn-outline').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0)';
+        btn.style.transition = 'transform 0.5s ease';
+    });
+});
+
+// 2. TILT EFFECT on project cards
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -10;
+        const rotateY = ((x - centerX) / centerX) * 10;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+        card.style.transition = 'transform 0.1s ease';
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+        card.style.transition = 'transform 0.5s ease';
+    });
+});
+
+// 3. SPOTLIGHT EFFECT
+const spotlight = document.createElement('div');
+spotlight.classList.add('spotlight');
+document.body.appendChild(spotlight);
+
+document.addEventListener('mousemove', (e) => {
+    spotlight.style.left = e.clientX + 'px';
+    spotlight.style.top = e.clientY + 'px';
+});
+
+// 4. GLITCH EFFECT on hero title
+const heroTitle = document.querySelector('.hero-title');
+if (heroTitle) {
+    heroTitle.setAttribute('data-text', heroTitle.textContent);
+    heroTitle.classList.add('glitch');
+}
