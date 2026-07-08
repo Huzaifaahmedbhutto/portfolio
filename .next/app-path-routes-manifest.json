@@ -1,8 +1,0 @@
-{
-  "/api/contact/route": "/api/contact",
-  "/_not-found/page": "/_not-found",
-  "/icon.svg/route": "/icon.svg",
-  "/admin/page": "/admin",
-  "/page": "/",
-  "/blog/[slug]/page": "/blog/[slug]"
-}

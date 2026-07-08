@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
-  <rect width="512" height="512" rx="96" fill="#0a0a0a"/>
-  <rect x="8" y="8" width="496" height="496" rx="88" stroke="#00e5ff" stroke-width="4" fill="none" opacity="0.3"/>
-  <text x="256" y="290" text-anchor="middle" font-family="system-ui,Segoe UI,sans-serif" font-size="160" font-weight="700" fill="#00e5ff">HAB</text>
-  <line x1="120" y1="340" x2="392" y2="340" stroke="#00e5ff" stroke-width="3" opacity="0.5"/>
-</svg>
