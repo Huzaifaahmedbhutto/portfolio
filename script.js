@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 // Custom Cursor
 const cursor = document.getElementById('cursor');
 const follower = document.getElementById('cursorFollower');
