@@ -128,41 +128,6 @@ function sendMessage() {
         alert('Please fill all fields!');
     }
 }
-// Particles
-particlesJS('particles-js', {
-    particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: '#cc3355' },
-        shape: { type: 'circle' },
-        opacity: { value: 0.3, random: true },
-        size: { value: 2, random: true },
-        line_linked: {
-            enable: true,
-            distance: 150,
-            color: '#cc3355',
-            opacity: 0.1,
-            width: 1
-        },
-        move: {
-            enable: true,
-            speed: 1.5,
-            direction: 'none',
-            random: true,
-            out_mode: 'out'
-        }
-    },
-    interactivity: {
-        detect_on: 'canvas',
-        events: {
-            onhover: { enable: true, mode: 'repulse' },
-            onclick: { enable: true, mode: 'push' }
-        },
-        modes: {
-            repulse: { distance: 100 },
-            push: { particles_nb: 4 }
-        }
-    }
-});
 // Timeline animation
 const timelineObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -215,17 +180,6 @@ document.querySelectorAll('.project-card').forEach(card => {
         card.style.transition = 'transform 0.5s ease';
     });
 });
-
-// 3. SPOTLIGHT EFFECT
-const spotlight = document.createElement('div');
-spotlight.classList.add('spotlight');
-document.body.appendChild(spotlight);
-
-document.addEventListener('mousemove', (e) => {
-    spotlight.style.left = e.clientX + 'px';
-    spotlight.style.top = e.clientY + 'px';
-});
-
 // 4. GLITCH EFFECT on hero title
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
