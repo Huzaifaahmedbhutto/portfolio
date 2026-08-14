@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,372 +8,1007 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
+
 <div class="progress-bar" id="progressBar"></div>
-    <div class="loader" id="loader">
-        <div class="loader-inner">
-            <div class="loader-tags">
-                <span>★ SYSTEM READY</span>
-                <span>PORTFOLIO 2026</span>
-                <span>UI LOADING</span>
-            </div>
-            <h1 class="loader-name">HUZAIFA AHMED BHUTTO</h1>
-            <div class="loader-core">
-                <div class="core-left">
-                    <p class="core-label">CORE UI</p>
-                    <div class="core-circle">
-                        <div class="orbit"></div>
-                        <div class="orbit orbit2"></div>
-                        <span class="core-welcome">WELCOME</span>
-                    </div>
-                    <p class="core-status">ONLINE</p>
-                </div>
-                <div class="core-right">
-                    <div class="core-stat"><span>06</span><small>Loaded</small></div>
-                    <div class="core-stat"><span>12ms</span><small>Stable</small></div>
-                </div>
-            </div>
-            <div class="loader-bar"><div class="loader-progress"></div></div>
+
+<div class="loader" id="loader">
+    <div class="loader-inner">
+
+        <div class="loader-tags">
+            <span>★ SYSTEM READY</span>
+            <span>PORTFOLIO 2026</span>
+            <span>UI LOADING</span>
         </div>
+
+        <h1 class="loader-name">HUZAIFA AHMED BHUTTO</h1>
+
+        <div class="loader-core">
+            <div class="core-left">
+                <p class="core-label">CORE UI</p>
+
+                <div class="core-circle">
+                    <div class="orbit"></div>
+                    <div class="orbit orbit2"></div>
+                    <span class="core-welcome">WELCOME</span>
+                </div>
+
+                <p class="core-status">ONLINE</p>
+            </div>
+
+            <div class="core-right">
+                <div class="core-stat">
+                    <span>06</span>
+                    <small>Loaded</small>
+                </div>
+
+                <div class="core-stat">
+                    <span>12ms</span>
+                    <small>Stable</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+
+    </div>
+</div>
+
+<header>
+    <nav>
+
+        <h1 class="logo">HAB.</h1>
+
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="theme-toggle" onclick="toggleTheme()">☀️ Light</button>
+
+            <a href="mailto:ahmedhuzaifa201@gmail.com" class="hire-btn">
+                Hire Me
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section id="hero">
+
+    <div class="hero-container">
+
+        <div class="hero-left">
+
+            <div class="badge">
+                ● Available for hire · Open to Internships
+            </div>
+
+            <h2 class="hero-title">
+                I Build Apps with <span class="accent">AI</span> &<br>
+                the <span class="accent2">Future.</span>
+            </h2>
+
+            <p class="hero-sub">
+                Mobile App & Full Stack Developer building real products using Android,
+                React, Python and AI. Currently interning at Codiora House (Pvt) Ltd.
+            </p>
+
+            <p class="hero-location">
+                📍 Tando Jam, Sindh, Pakistan &nbsp;|&nbsp; 🎓 SAU Tandojam
+            </p>
+
+            <div class="hero-btns">
+                <a href="#projects" class="btn">See My Work →</a>
+
+                <a href="Huzaifa_Ahmed_Bhutto_CV.pdf"
+                   download
+                   class="btn-outline">
+                    Download CV ↓
+                </a>
+            </div>
+
+            <div class="social-links">
+
+                <a href="https://github.com/Huzaifaahmedbhutto"
+                   target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/huzaifa-ahmed-bhutto-880441317"
+                   target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:ahmedhuzaifa201@gmail.com">
+                    Email
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-right">
+
+            <div class="hero-img-wrap">
+
+                <img src="huzaifa.jpg.jpeg"
+                     alt="Huzaifa Ahmed Bhutto"
+                     class="hero-img">
+
+                <div class="img-badge">
+                    ● Huzaifa Ahmed Bhutto
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <header>
-        <nav>
-            <h1 class="logo">HAB.</h1>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#aboutme">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-right">
-                <button class="theme-toggle" onclick="toggleTheme()">☀️ Light</button>
-                <a href="mailto:ahmedhuzaifa201@gmail.com" class="hire-btn">Hire Me</a>
-            </div>
-        </nav>
-    </header>
 
-    <section id="hero">
-        <div class="hero-container">
-            <div class="hero-left">
-                <div class="badge">● Available for hire · Open to Internships</div>
-                <h2 class="hero-title">I Build Apps with <span class="accent">AI</span> &<br>the <span class="accent2">Future.</span></h2>
-                <p class="hero-sub">Mobile App & Full Stack Developer building real products using Android, React, Python and AI. Currently interning at Codiora House (Pvt) Ltd.</p>
-                <p class="hero-location">📍 Tando Jam, Sindh, Pakistan &nbsp;|&nbsp; 🎓 SAU Tandojam</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn">See My Work →</a>
-                    <a href="Huzaifa_Ahmed_Bhutto_CV.pdf" download class="btn-outline">Download CV ↓</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Huzaifaahmedbhutto" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/huzaifa-ahmed-bhutto-880441317" target="_blank">LinkedIn</a>
-                    <a href="mailto:ahmedhuzaifa201@gmail.com">Email</a>
-                </div>
-            </div>
-            <div class="hero-right">
-                <div class="hero-img-wrap">
-                    <img src="huzaifa.jpg.jpeg" alt="Huzaifa Ahmed Bhutto" class="hero-img">
-                    <div class="img-badge">● Huzaifa Ahmed Bhutto</div>
-                </div>
-            </div>
-        </div>
-        <div class="ticker-wrap">
-            <div class="ticker">
-                <span>Mobile App Developer</span><span>•</span>
-                <span>Full Stack Developer</span><span>•</span>
-                <span>AI Builder</span><span>•</span>
-                <span>CS Student @ SAU</span><span>•</span>
-                <span>Intern @ Codiora House</span><span>•</span>
-                <span>Open to Opportunities</span><span>•</span>
-                <span>Pakistan 🇵🇰</span><span>•</span>
-                <span>Mobile App Developer</span><span>•</span>
-                <span>Full Stack Developer</span><span>•</span>
-                <span>AI Builder</span><span>•</span>
-                <span>CS Student @ SAU</span><span>•</span>
-                <span>Intern @ Codiora House</span><span>•</span>
-                <span>Open to Opportunities</span><span>•</span>
-                <span>Pakistan 🇵🇰</span><span>•</span>
-            </div>
-        </div>
-    </section>
+    <div class="ticker-wrap">
 
-    <section id="aboutme">
-        <div class="section-container">
-            <p class="section-num">01 ——— ABOUT ME</p>
-            <div class="aboutme-grid">
-                <div class="aboutme-text">
-                    <h2 class="section-title">ABOUT.</h2>
-                    <p class="aboutme-desc">Second-year CS student who builds real things from day one. I started uploading projects to GitHub in my first semester because I knew practical work matters more than just grades.</p>
-                    <p class="aboutme-desc">I have shipped a live AI learning platform, built Android apps, and picked up full-stack skills mostly by doing. I am looking for opportunities where I can actually contribute, not just observe.</p>
-                    <div class="aboutme-tags">
-                        <span>Mobile Dev</span>
-                        <span>AI Builder</span>
-                        <span>Full Stack</span>
-                        <span>Open Source</span>
-                    </div>
-                    <div class="aboutme-info">
-                        <p>📍 Tando Jam, Sindh, Pakistan</p>
-                        <p>🎓 BS Computer Science — SAU Tandojam</p>
-                        <p>💼 Intern @ Codiora House (Pvt) Ltd</p>
-                        <p>📧 ahmedhuzaifa201@gmail.com</p>
-                    </div>
-                </div>
-                <div class="aboutme-photo">
-                    <img src="huzaifa.jpg.jpeg" alt="Huzaifa" class="profile-img">
-                    <div class="photo-badge">● Huzaifa Ahmed Bhutto</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="ticker">
 
-    <section id="skills">
-        <div class="section-container">
-            <p class="section-num">02 ——— SKILLS</p>
-            <h2 class="section-title">SKILLS.</h2>
-            <div class="skills-grid">
-                <div class="skill-card">Android</div>
-                <div class="skill-card">Kotlin</div>
-                <div class="skill-card">Java</div>
-                <div class="skill-card">React.js</div>
-                <div class="skill-card">Next.js</div>
-                <div class="skill-card">Node.js</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">AI / ML</div>
-                <div class="skill-card">OpenCV</div>
-                <div class="skill-card">Git & GitHub</div>
-                <div class="skill-card">HTML & CSS</div>
-                <div class="skill-card">JavaScript</div>
-            </div>
-        </div>
-    </section>
+            <span>Mobile App Developer</span>
+            <span>•</span>
 
-    <section id="projects">
-        <div class="section-container">
-            <p class="section-num">03 ——— PROJECTS</p>
-            <h2 class="section-title">FEATURED WORK.</h2>
-            <p class="projects-sub">A showcase of my recent projects demonstrating expertise in mobile development, AI integration, and full-stack engineering.</p>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="study mate ai" alt="StudyMate AI" class="project-img" style="height:200px; width:100%; object-fit:cover;">
-                            <div class="project-info"><h3>StudyMate AI</h3></div>
-                        </div>
-                        <div class="project-card-back">
+            <span>Full Stack Developer</span>
+            <span>•</span>
+
+            <span>AI Builder</span>
+            <span>•</span>
+
+            <span>CS Student @ SAU</span>
+            <span>•</span>
+
+            <span>Intern @ Codiora House</span>
+            <span>•</span>
+
+            <span>Open to Opportunities</span>
+            <span>•</span>
+
+            <span>Pakistan 🇵🇰</span>
+            <span>•</span>
+
+            <span>Mobile App Developer</span>
+            <span>•</span>
+
+            <span>Full Stack Developer</span>
+            <span>•</span>
+
+            <span>AI Builder</span>
+            <span>•</span>
+
+            <span>CS Student @ SAU</span>
+            <span>•</span>
+
+            <span>Intern @ Codiora House</span>
+            <span>•</span>
+
+            <span>Open to Opportunities</span>
+            <span>•</span>
+
+            <span>Pakistan 🇵🇰</span>
+            <span>•</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="aboutme">
+
+    <div class="section-container">
+
+        <p class="section-num">01 ——— ABOUT ME</p>
+
+        <div class="aboutme-grid">
+
+            <div class="aboutme-text">
+
+                <h2 class="section-title">ABOUT.</h2>
+
+                <p class="aboutme-desc">
+                    Second-year CS student who builds real things from day one.
+                    I started uploading projects to GitHub in my first semester
+                    because I knew practical work matters more than just grades.
+                </p>
+
+                <p class="aboutme-desc">
+                    I have shipped AI-powered applications, built Android apps,
+                    created data analytics tools, and picked up full-stack skills
+                    mostly by doing. I am looking for opportunities where I can
+                    actually contribute, not just observe.
+                </p>
+
+                <div class="aboutme-tags">
+                    <span>Mobile Dev</span>
+                    <span>AI Builder</span>
+                    <span>Full Stack</span>
+                    <span>Data Analytics</span>
+                </div>
+
+                <div class="aboutme-info">
+
+                    <p>📍 Tando Jam, Sindh, Pakistan</p>
+
+                    <p>
+                        🎓 BS Computer Science — SAU Tandojam
+                    </p>
+
+                    <p>
+                        💼 Intern @ Codiora House (Pvt) Ltd
+                    </p>
+
+                    <p>
+                        📧 ahmedhuzaifa201@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="aboutme-photo">
+
+                <img src="huzaifa.jpg.jpeg"
+                     alt="Huzaifa"
+                     class="profile-img">
+
+                <div class="photo-badge">
+                    ● Huzaifa Ahmed Bhutto
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <div class="section-container">
+
+        <p class="section-num">02 ——— SKILLS</p>
+
+        <h2 class="section-title">SKILLS.</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">Android</div>
+            <div class="skill-card">Kotlin</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">React.js</div>
+            <div class="skill-card">Next.js</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">AI / ML</div>
+            <div class="skill-card">OpenCV</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Pandas</div>
+            <div class="skill-card">Plotly</div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <div class="section-container">
+
+        <p class="section-num">03 ——— PROJECTS</p>
+
+        <h2 class="section-title">FEATURED WORK.</h2>
+
+        <p class="projects-sub">
+            A showcase of my recent projects demonstrating expertise in
+            mobile development, AI integration, data analytics,
+            and full-stack engineering.
+        </p>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <div class="project-card-inner">
+
+                    <div class="project-card-front">
+
+                        <img src="study mate ai"
+                             alt="StudyMate AI"
+                             class="project-img"
+                             style="height:200px; width:100%; object-fit:cover;">
+
+                        <div class="project-info">
                             <h3>StudyMate AI</h3>
-                            <p>A fully deployed AI learning platform with 8 tools — Explain, Quiz, Flashcards, Study Plan and more.</p>
-                            <div class="project-tags">
-                                <span>Python</span><span>Streamlit</span><span>Claude API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Huzaifaahmedbhutto/studymate-ai" target="_blank" class="proj-btn">GitHub</a>
-                                <a href="https://studymate-ai-vd9mftx92ilhuh9b9vvswx.streamlit.app/" target="_blank" class="proj-btn-outline">Live Demo</a>
-                            </div>
                         </div>
+
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <div class="project-img-placeholder">Neon Hand Web</div>
-                            <div class="project-info"><h3>Neon Hand Web</h3></div>
+
+
+                    <div class="project-card-back">
+
+                        <h3>StudyMate AI</h3>
+
+                        <p>
+                            A fully deployed AI learning platform with
+                            8 tools including Explain, Quiz, Flashcards,
+                            Study Plan and more.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>Claude API</span>
                         </div>
-                        <div class="project-card-back">
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/Huzaifaahmedbhutto/studymate-ai"
+                               target="_blank"
+                               class="proj-btn">
+                                GitHub
+                            </a>
+
+                            <a href="https://studymate-ai-vd9mftx92ilhuh9b9vvswx.streamlit.app/"
+                               target="_blank"
+                               class="proj-btn-outline">
+                                Live Demo
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <div class="project-card-inner">
+
+                    <div class="project-card-front">
+
+                        <div class="project-img-placeholder">
+                            Neon Hand Web
+                        </div>
+
+                        <div class="project-info">
                             <h3>Neon Hand Web</h3>
-                            <p>Real-time hand landmark visualizer using OpenCV and MediaPipe with glowing neon effects.</p>
-                            <div class="project-tags">
-                                <span>Python</span><span>OpenCV</span><span>MediaPipe</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Huzaifaahmedbhutto/neon-hand-web" target="_blank" class="proj-btn">GitHub</a>
-                            </div>
                         </div>
+
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="story forge ai" alt="StoryForge AI" class="project-img" style="height:200px; width:100%; object-fit:cover;">
-                            <div class="project-info"><h3>StoryForge AI</h3></div>
+
+
+                    <div class="project-card-back">
+
+                        <h3>Neon Hand Web</h3>
+
+                        <p>
+                            Real-time hand landmark visualizer using
+                            OpenCV and MediaPipe with glowing neon effects.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
                         </div>
-                        <div class="project-card-back">
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/Huzaifaahmedbhutto/neon-hand-web"
+                               target="_blank"
+                               class="proj-btn">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <div class="project-card-inner">
+
+                    <div class="project-card-front">
+
+                        <img src="story forge ai"
+                             alt="StoryForge AI"
+                             class="project-img"
+                             style="height:200px; width:100%; object-fit:cover;">
+
+                        <div class="project-info">
                             <h3>StoryForge AI</h3>
-                            <p>Offline bilingual (Urdu/English) story generator with genre selection and Canvas API.</p>
-                            <div class="project-tags">
-                                <span>JavaScript</span><span>HTML</span><span>Web Audio API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Huzaifaahmedbhutto/-storyforge-ai" target="_blank" class="proj-btn">GitHub</a>
-                                <a href="https://forge-words-unfold.lovable.app" target="_blank" class="proj-btn-outline">Live Demo</a>
-                            </div>
                         </div>
+
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="finance tracker.jpeg" alt="Finance Tracker" class="project-img" style="height:200px; width:100%; object-fit:cover;">
-                            <div class="project-info"><h3>Personal Finance Tracker</h3></div>
+
+
+                    <div class="project-card-back">
+
+                        <h3>StoryForge AI</h3>
+
+                        <p>
+                            Offline bilingual Urdu/English story generator
+                            with genre selection and Canvas API.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>Web Audio API</span>
                         </div>
-                        <div class="project-card-back">
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/Huzaifaahmedbhutto/-storyforge-ai"
+                               target="_blank"
+                               class="proj-btn">
+                                GitHub
+                            </a>
+
+                            <a href="https://forge-words-unfold.lovable.app"
+                               target="_blank"
+                               class="proj-btn-outline">
+                                Live Demo
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+
+            <div class="project-card">
+
+                <div class="project-card-inner">
+
+                    <div class="project-card-front">
+
+                        <img src="finance tracker.jpeg"
+                             alt="Finance Tracker"
+                             class="project-img"
+                             style="height:200px; width:100%; object-fit:cover;">
+
+                        <div class="project-info">
                             <h3>Personal Finance Tracker</h3>
-                            <p>Tracks daily income and expenses with monthly budget monitoring.</p>
-                            <div class="project-tags">
-                                <span>Python</span><span>HTML</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Huzaifaahmedbhutto/personal-finance-tracker" target="_blank" class="proj-btn">GitHub</a>
-                            </div>
                         </div>
+
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="grade calculator" alt="Grade Calculator" class="project-img" style="height:200px; width:100%; object-fit:cover;">
-                            <div class="project-info"><h3>Student Grade Calculator</h3></div>
+
+
+                    <div class="project-card-back">
+
+                        <h3>Personal Finance Tracker</h3>
+
+                        <p>
+                            Tracks daily income and expenses with
+                            monthly budget monitoring.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>HTML</span>
                         </div>
-                        <div class="project-card-back">
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/Huzaifaahmedbhutto/personal-finance-tracker"
+                               target="_blank"
+                               class="proj-btn">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 5 -->
+
+            <div class="project-card">
+
+                <div class="project-card-inner">
+
+                    <div class="project-card-front">
+
+                        <img src="grade calculator"
+                             alt="Grade Calculator"
+                             class="project-img"
+                             style="height:200px; width:100%; object-fit:cover;">
+
+                        <div class="project-info">
                             <h3>Student Grade Calculator</h3>
-                            <p>Calculates GPA across multiple subjects and displays grade letters automatically.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Huzaifaahmedbhutto/students-grade-calculator" target="_blank" class="proj-btn">GitHub</a>
-                            </div>
                         </div>
+
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="number game" alt="Number Game" class="project-img" style="height:200px; width:100%; object-fit:cover;">
-                            <div class="project-info"><h3>Android Fuel Estimator</h3></div>
+
+
+                    <div class="project-card-back">
+
+                        <h3>Student Grade Calculator</h3>
+
+                        <p>
+                            Calculates GPA across multiple subjects
+                            and displays grade letters automatically.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
                         </div>
-                        <div class="project-card-back">
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/Huzaifaahmedbhutto/students-grade-calculator"
+                               target="_blank"
+                               class="proj-btn">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 6 -->
+
+            <div class="project-card">
+
+                <div class="project-card-inner">
+
+                    <div class="project-card-front">
+
+                        <img src="number game"
+                             alt="Android Fuel Estimator"
+                             class="project-img"
+                             style="height:200px; width:100%; object-fit:cover;">
+
+                        <div class="project-info">
                             <h3>Android Fuel Estimator</h3>
-                            <p>Android app calculating fuel cost based on distance and fuel price with multi-screen navigation.</p>
-                            <div class="project-tags">
-                                <span>Java</span><span>Android Studio</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Huzaifaahmedbhutto" target="_blank" class="proj-btn">GitHub</a>
-                            </div>
                         </div>
+
                     </div>
+
+
+                    <div class="project-card-back">
+
+                        <h3>Android Fuel Estimator</h3>
+
+                        <p>
+                            Android app calculating fuel cost based on
+                            distance and fuel price with multi-screen navigation.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Android Studio</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/Huzaifaahmedbhutto"
+                               target="_blank"
+                               class="proj-btn">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
-        </div>
-    </section>
 
-    <section id="services">
-        <div class="section-container">
-            <p class="section-num">04 ——— SERVICES</p>
-            <h2 class="section-title">WHAT I OFFER.</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Android Development</h3>
-                    <p>Building native Android applications using Java and Kotlin with clean UI and smooth navigation.</p>
+
+            <!-- PROJECT 7 — AI DATA ANALYST -->
+
+            <div class="project-card">
+
+                <div class="project-card-inner">
+
+                    <div class="project-card-front">
+
+                        <div class="project-img-placeholder">
+                            AI Data Analyst
+                        </div>
+
+                        <div class="project-info">
+                            <h3>AI Data Analyst</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-card-back">
+
+                        <h3>AI Data Analyst</h3>
+
+                        <p>
+                            AI-powered Streamlit dashboard for exploring
+                            datasets, calculating business KPIs, visualizing
+                            trends, generating smart insights, and asking
+                            natural-language questions about data with Gemini AI.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>Pandas</span>
+                            <span>Plotly</span>
+                            <span>Gemini AI</span>
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="https://github.com/Huzaifaahmedbhutto/AI-Data-Analyst"
+                               target="_blank"
+                               class="proj-btn">
+                                GitHub
+                            </a>
+
+                            <a href="https://ai-data-analyst-huzaifa.streamlit.app/"
+                               target="_blank"
+                               class="proj-btn-outline">
+                                Live Demo
+                            </a>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🌐</div>
-                    <h3>Web Development</h3>
-                    <p>Creating responsive and modern web applications using React, Next.js, HTML, CSS and JavaScript.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🤖</div>
-                    <h3>AI Integration</h3>
-                    <p>Integrating AI tools and APIs like Claude, Groq and OpenCV into real-world applications.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🐍</div>
-                    <h3>Python Development</h3>
-                    <p>Building automation scripts, data tools and AI-powered apps using Python and Streamlit.</p>
-                </div>
+
             </div>
-        </div>
-    </section>
 
-    <section id="education">
-        <div class="section-container">
-            <p class="section-num">05 ——— EDUCATION</p>
-            <h2 class="section-title">EDUCATION.</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2023 — Present</span>
-                        <h3>BS Computer Science</h3>
-                        <p>Sindh Agriculture University, Tando Jam</p>
-                        <small>GPA: 3.63 | 4th Semester</small>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2021 — 2023</span>
-                        <h3>Intermediate — Pre-Engineering</h3>
-                        <p>Ziauddin Board, Karachi</p>
-                        <small>Year 12: A Grade | Year 11: 500/550</small>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-year">2019 — 2021</span>
-                        <h3>Matriculation</h3>
-                        <p>Shah Abdul Latif Public Secondary School, Steel Town, Karachi</p>
-                    </div>
-                </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+    <div class="section-container">
+
+        <p class="section-num">04 ——— SERVICES</p>
+
+        <h2 class="section-title">WHAT I OFFER.</h2>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">📱</div>
+
+                <h3>Android Development</h3>
+
+                <p>
+                    Building native Android applications using Java
+                    and Kotlin with clean UI and smooth navigation.
+                </p>
+
             </div>
-        </div>
-    </section>
 
-    <section id="contact">
-        <div class="section-container">
-            <p class="section-num">06 ——— CONTACT</p>
-            <div class="contact-grid">
-                <div class="contact-left">
-                    <h2 class="section-title">GET IN TOUCH.</h2>
-                    <p class="contact-desc">Let's collaborate! I am always open to discussing exciting projects and new opportunities.</p>
-                    <div class="contact-info">
-                        <p>📧 ahmedhuzaifa201@gmail.com</p>
-                        <p>📍 Tando Jam, Sindh, Pakistan</p>
-                    </div>
-                    <div class="contact-socials">
-                        <a href="https://github.com/Huzaifaahmedbhutto" target="_blank">🐙 GitHub</a>
-                        <a href="https://www.linkedin.com/in/huzaifa-ahmed-bhutto-880441317" target="_blank">💼 LinkedIn</a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <div class="contact-form">
-                        <form action="https://formspree.io/f/mojowonr" method="POST">
-                            <input type="text" name="name" placeholder="Your Name" class="form-input" required>
-                            <input type="email" name="email" placeholder="Your Email" class="form-input" required>
-                            <textarea name="message" placeholder="Your Message" class="form-textarea" required></textarea>
-                            <button type="submit" class="btn">Send Message</button>
-                        </form>
-                    </div>
-                </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">🌐</div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Creating responsive and modern web applications
+                    using React, Next.js, HTML, CSS and JavaScript.
+                </p>
+
             </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🤖</div>
+
+                <h3>AI Integration</h3>
+
+                <p>
+                    Integrating AI tools and APIs like Claude,
+                    Gemini, Groq and OpenCV into real-world applications.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🐍</div>
+
+                <h3>Python Development</h3>
+
+                <p>
+                    Building automation scripts, data tools,
+                    analytics dashboards and AI-powered applications
+                    using Python and Streamlit.
+                </p>
+
+            </div>
+
         </div>
-    </section>
 
-    <footer>
-        <p>© 2026 Huzaifa Ahmed Bhutto. All rights reserved.</p>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <div class="section-container">
+
+        <p class="section-num">05 ——— EDUCATION</p>
+
+        <h2 class="section-title">EDUCATION.</h2>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2023 — Present
+                    </span>
+
+                    <h3>BS Computer Science</h3>
+
+                    <p>
+                        Sindh Agriculture University, Tando Jam
+                    </p>
+
+                    <small>
+                        GPA: 3.63 | 4th Semester
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2021 — 2023
+                    </span>
+
+                    <h3>Intermediate — Pre-Engineering</h3>
+
+                    <p>
+                        Ziauddin Board, Karachi
+                    </p>
+
+                    <small>
+                        Year 12: A Grade | Year 11: 500/550
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-year">
+                        2019 — 2021
+                    </span>
+
+                    <h3>Matriculation</h3>
+
+                    <p>
+                        Shah Abdul Latif Public Secondary School,
+                        Steel Town, Karachi
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="section-container">
+
+        <p class="section-num">06 ——— CONTACT</p>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-left">
+
+                <h2 class="section-title">
+                    GET IN TOUCH.
+                </h2>
+
+                <p class="contact-desc">
+                    Let's collaborate! I am always open to discussing
+                    exciting projects and new opportunities.
+                </p>
+
+
+                <div class="contact-info">
+
+                    <p>
+                        📧 ahmedhuzaifa201@gmail.com
+                    </p>
+
+                    <p>
+                        📍 Tando Jam, Sindh, Pakistan
+                    </p>
+
+                </div>
+
+
+                <div class="contact-socials">
+
+                    <a href="https://github.com/Huzaifaahmedbhutto"
+                       target="_blank">
+                        🐙 GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/huzaifa-ahmed-bhutto-880441317"
+                       target="_blank">
+                        💼 LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-right">
+
+                <div class="contact-form">
+
+                    <form action="https://formspree.io/f/mojowonr"
+                          method="POST">
+
+                        <input type="text"
+                               name="name"
+                               placeholder="Your Name"
+                               class="form-input"
+                               required>
+
+                        <input type="email"
+                               name="email"
+                               placeholder="Your Email"
+                               class="form-input"
+                               required>
+
+                        <textarea name="message"
+                                  placeholder="Your Message"
+                                  class="form-textarea"
+                                  required></textarea>
+
+                        <button type="submit"
+                                class="btn">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Huzaifa Ahmed Bhutto. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
+```
